@@ -1,9 +1,0 @@
-cd vim
-git fetch && git reset --hard origin/master
-
-make distclean
-./configure --with-features=huge --enable-multibyte --enable-rubyinterp --enable-python3interp --enable-pythoninterp --enable-perlinterp --enable-fontset --enable-pythoninterp
-if [ ! $? -eq 0 ]; then exit ;fi
-make
-make install
-
